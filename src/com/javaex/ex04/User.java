@@ -1,16 +1,25 @@
 package com.javaex.ex04;
 
 public class User {
-	private String id;
-	private String password;
-	private String name;
+	//필드
+	protected String id;
+	protected String password;
+	protected String name;
 	
+	//기본 생성자
+	public User() {
+		
+	}
+	
+	//전체 필드 생성자
 	public User(String id, String password, String name) {
 		this.id = id;
 		this.password = password;
 		this.name = name;
 	}
 	
+	
+	//getter/setter
 	public String getId() {
 		return id;
 	}
@@ -30,6 +39,8 @@ public class User {
 		this.name = name;
 	}
 	
+	
+	//메서드
 	public void showInfo() {
 		System.out.println("#아이디: " + id + ", #패스워드: " + password + ", #이름: " + name);
 	}

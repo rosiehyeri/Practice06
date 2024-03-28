@@ -1,3 +1,4 @@
+
 package com.javaex.ex01;
 
 public class Customer extends Person{
@@ -5,6 +6,10 @@ public class Customer extends Person{
 	private int cNo;
 	private int point;
 	
+	//생성자
+	public Customer () {
+		System.out.println("생성자 Customer(0) 호출");
+	}
 	public Customer(String name, String hp, int cNo, int point) {
 		super(name, hp);
 		this.cNo = cNo;

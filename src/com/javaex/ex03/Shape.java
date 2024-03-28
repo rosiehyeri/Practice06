@@ -4,13 +4,16 @@ public class Shape {
 	protected String fillColor;
 	protected String lineColor;
 	
+	
+	
 	public Shape(String fillColor, String lineColor) {
 		this.fillColor = fillColor;
 		this.lineColor = lineColor;
 	}
 	public Shape() {        // Shape 클래스에 기본 생성자가 추가되어 Triangle 클래스에서 부모 클래스의 생성자를 호출할 때 오류가 발생하지 않음
-		
-	}
+		//생성자 선언하지 않으면 기본 생성자를 자동으로 추가
+		//임의로 생성자를 선언하면 기본 생성자를 자동으로 추가하지 않음
+		}
 	public String getFillColor() {
 		return fillColor;
 	}
